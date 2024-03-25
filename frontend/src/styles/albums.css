@@ -1,0 +1,357 @@
+.album-container {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-gap: 10px; */
+    padding-left: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.album-card {
+    padding: 6px;
+    width: 150px;
+    height: max-content;
+    /* margin: 10px 5px 10px 10px; */
+    position: relative;
+}
+
+.album-card:hover {
+    /* padding-bottom: 8px; */
+    background-color: rgba(17, 17, 17, 0.349);
+    border-radius: 4px;
+}
+
+
+.album-actions {
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    width: 100%;
+    padding-right: 8.3px;
+    padding-top: 3px;
+    grid-gap: 2px;
+}
+
+.album-actions button {
+    background-color: rgba(0, 0, 0, 0.585);
+    border: none;
+    height: 25px;
+    width: 25px;
+    padding: 3px;
+}
+
+
+.album-image {
+    /* color: #ffffffdf; */
+    background-color: rgb(87, 87, 87);
+    box-shadow: 0 0 1.4px rgb(255, 255, 255);
+    width: 100%;
+    height: 155px;
+    overflow: hidden;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.album-image img {
+    width: 200%;
+}
+
+.album-body {
+    color: rgba(255, 255, 255, 0.364);
+    font-size: 13px;
+    padding: 5px 2px 2px 0;
+    font-weight: lighter;
+    width: 100%;
+    height: auto;
+}
+
+.album-body p {
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.album-body span {
+    color: rgba(255, 255, 255, 0.886);
+    margin-right: 5px;
+}
+
+
+.album-search {
+    width: 1200px;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.album-search input:hover {
+    transition: 0.2s;
+    background-color: rgba(255, 255, 255, 0.136);
+}
+
+.album-search input {
+    width: 90%;
+    outline: none;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    background-color: rgb(50, 50, 50);
+    background-color: rgba(0, 0, 0, 0.363);
+    color: rgba(255, 255, 255, 0.741);
+}
+
+.album-search input::placeholder {
+    color: rgba(255, 255, 255, 0.741);
+}
+
+
+
+
+/* POPUP */
+.pop-card {
+    width: 150px;
+    height: max-content;
+    margin: 0px 4px 10px 4px;
+}
+
+.pop-image {
+    background-color: rgb(87, 87, 87);
+    box-shadow: 0 0 1.4px rgb(255, 255, 255);
+    width: 100%;
+    height: 155px;
+    overflow: hidden;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pop-body {
+    color: rgba(255, 255, 255, 0.364);
+    font-size: 13px;
+    padding: 5px 2px 2px 0;
+    font-weight: lighter;
+}
+
+.pop-input {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pop-input input {
+    padding-bottom: 1px;
+    padding-left: 1px;
+    width: 100%;
+    outline: none;
+    color: rgba(255, 255, 255, 0.364);
+    background-color: rgba(83, 83, 83, 0);
+    margin-bottom: 10px;
+    border: none;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.253); */
+}
+
+
+
+.pop-input .cancel {
+   background-color: red; 
+   width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 100%;
+    margin-left: 7px;
+}
+
+.pop-input .submit {
+    border: none;
+    width: 25.2px;
+    height: 25px;
+    background-color: greenyellow;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.del-prompt-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 99;
+}
+
+
+.del-prompt {
+    margin-top: 14px;
+    margin-left: auto; 
+    margin-right: auto;
+    background-color: rgb(46, 46, 46);
+    border: 1px solid rgba(255, 255, 255, 0.062);
+    width: 400px;
+    border-radius: 20px;
+    height: max-content;
+    overflow: hidden;
+    animation: pop 0.3s ease-out;
+}
+
+@keyframes pop {
+    0% { transform: scale(0.7); opacity: 0; }
+    50% { transform: scale(1); opacity: 1   ; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+
+.del-prompt .body {
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.del-prompt .body h2 {
+    font-weight: lighter;
+    text-align: center;
+}
+
+.del-prompt .body p {
+    margin-top: 8px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.497);
+    font-size: 15px;
+}
+
+
+
+.del-btns {
+    background-color: rgba(38, 38, 38, 0.718);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    grid-gap: 10px;
+    height: 50px;   
+}
+
+.del-btns button {
+    width: 90px;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;   
+    color: white;
+}
+
+.del-btns .cancel {
+    background-color: rgb(28, 28, 28);
+}
+
+.del-btns .delete {
+    background-color: rgb(69, 69, 69);
+}
+
+
+
+
+.edit-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.edit-box {
+    width: max-content;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edit-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-cover {
+    box-shadow: 0 0 0 7px rgba(129, 129, 129, 0.712);
+    background-color: rgba(129, 129, 129, 0.712);
+    position: relative;
+    margin: 10px 7px 10px 7px;
+    width: 400px;
+    height: 320px;
+    border: 4.3px dashed rgba(26, 26, 26, 0.464);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-cover .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    width: 103%;
+    height: 104%;
+}
+
+.edit-box .image img {
+    width: 132%;
+}
+
+.edit-input {
+    /* background-color: red; */
+    display: flex;
+    margin-top: 15px;
+}
+
+.edit-input .text {
+    background-color: white;
+    border: none;
+    height: 40px;
+    width: 360px;
+    outline: none;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.edit-input .file {
+    display: none;
+}
+
+.edit-input .cover {
+    border: 21px solid white;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-variant:small-caps;
+    background-color: rgb(24, 24, 24);
+    padding: 0 20px 0 20px;
+    height: 40px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.edit-submit {
+    opacity: 0;
+    margin-top: 15px;
+    border: none;
+    color: white;
+    background-color: greenyellow;
+    width: 100%;
+    border-radius: 18px;
+    font-weight: bold;
+    width: 77px;
+    height: 77px;
+}

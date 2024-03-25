@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #26282b;
+    color: #ffffffc9;
+}
+
+.app {
+    display: flex;
+}
+
+.side {
+    width: max-content;
+}
+
+.sect {
+    width: 100%;
+    padding-top: 25px;
+}
+
+.filter select {
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 255, 0);
+    color: rgba(255, 255, 255, 0.803);
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.filter select option {
+    color: black;
+}

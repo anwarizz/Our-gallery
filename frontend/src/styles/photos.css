@@ -1,0 +1,86 @@
+.container {
+    /* background-color: rgb(0, 255, 110); */
+    height: max-content;
+    max-height: 340px;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+    padding-left: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.card {
+    width: 105px;
+    height: 105px;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(140, 140, 140, 0.832);
+}
+.card img {
+    width: 212%;
+}
+
+.plus {
+    align-items: center;
+    justify-content: center;
+}
+
+.plus svg {
+    width: 85%;
+}
+
+.heading {
+    font-size: 16.2px;
+    font-weight: 100;
+    padding: 0  0 10px 5px;
+    color: rgba(255, 255, 255, 0.559);
+    /* background-color: blue; */
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3px;
+}
+
+
+.view-more-btn {
+    /* position: absolute;
+    left: 10px;
+    bottom: -47px; */
+    font-size: 12px;
+    border: none;
+    padding: 6px;
+    background-color: rgb(44, 42, 48);
+    border: 3px solid rgba(255, 255, 255, 0.137);
+    color: rgba(255, 255, 255, 0.525);
+    z-index: 99;
+}
+
+.btns {
+    padding: 10px 0 7px 7px;
+    /* background-color: red; */
+    display: relative;
+    margin-bottom: 120px;
+    width: 100%;
+}
+
+.view-more-btn:active {
+    background-color: rgb(113, 113, 113);
+}
+
+@media only screen and (max-width: 1600px) {
+    .container {
+        width: 95%;
+        padding-right: 6px;
+        position: relative;
+    }
+    
+    .heading {
+        width: 90%;
+    }
+}
