@@ -5,7 +5,7 @@
 ## How to Run the Project
 
 1. Make sure you have Node.js and MongoDB installed on your computer.
-2. Clone this repository to your computer by running `git clone <repository_URL>` in your terminal. Replace `<repository_URL>` with the actual URL of the repository.
+2. Clone this repository to your computer by running `git clone https://github.com/gettingdev/Our-gallery` in your terminal.
 3. Open a terminal and navigate to the project directory.
 4. Install dependencies by running `npm install` inside both the frontend and backend folders.
 5. Create a `.env` file inside the backend folder and set up the MongoDB database connection.
